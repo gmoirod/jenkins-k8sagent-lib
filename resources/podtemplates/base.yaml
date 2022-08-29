@@ -5,6 +5,7 @@ spec:
     - "jenkins.example.com"
   #imagePullSecrets:
   #- name: regcred
+  serviceAccountName: jenkins
   volumes:
   - hostPath:
       path: /data/jenkins/repo_mirror
