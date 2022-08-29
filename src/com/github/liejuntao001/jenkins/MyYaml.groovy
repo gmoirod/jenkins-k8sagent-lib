@@ -1,6 +1,6 @@
 package com.github.liejuntao001.jenkins
 
-@Grab('org.yaml:snakeyaml:1.25')
+//@Grab('org.yaml:snakeyaml:1.25')
 
 import org.yaml.snakeyaml.Yaml
 import org.yaml.snakeyaml.constructor.SafeConstructor
