@@ -6,11 +6,11 @@ spec:
   #imagePullSecrets:
   #- name: regcred
   serviceAccountName: jenkins
-  volumes:
-  - hostPath:
-      path: /data/jenkins/repo_mirror
-      type: ""
-    name: volume-0
+#  volumes:
+#  - hostPath:
+#      path: /data/jenkins/repo_mirror
+#      type: ""
+#    name: volume-0
   containers:
   - name: jnlp
     image: jenkinsci/jnlp-slave:3.29-1
@@ -19,9 +19,9 @@ spec:
     imagePullPolicy: Always
     command:
     - /usr/local/bin/jenkins-slave
-    volumeMounts:
-    - mountPath: /home/jenkins/repo_cache
-      name: volume-0
+#    volumeMounts:
+#    - mountPath: /home/jenkins/repo_cache
+#      name: volume-0
   #initContainers:
   #- name: init-maven-cache
   #  # use your own cache
